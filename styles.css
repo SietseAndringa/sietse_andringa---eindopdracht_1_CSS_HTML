@@ -1,0 +1,334 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+.grid-site {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 90px 50px 0fr 1fr 0fr auto;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px; 
+    background-color: #212e80;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+header {
+    background-image: url(http://www.adkusters.dsmynas.com/Website%20mynas/images/BMW%20Z4/BMW%20Z4%20Historie/2003-bmw-z4-2-door-roadster-2-5i%20side.jpg);
+    background-repeat: no-repeat;
+    background-position:top;
+    background-size: 700px; 
+}
+.header-grid {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color:white;
+    text-align: center; 
+
+}
+
+h1 {
+    display: inline-block;
+    color: black;
+    background-color:white;
+    margin-top: 20px;
+    border: 2px solid #212e80;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.bmw-logo-left {
+    display: block;
+    height: 70px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.bmw-logo-right {
+    display: block;
+    height: 70px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.navbar-grid {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    background-color: #b3b3ff;
+}
+
+.navbox-1 {
+        border-left: 2px solid #212e80;
+        border-right: 2px solid #212e80;
+        background-color: #e6e6ff;
+        width: 20%;
+        text-align: center;
+        padding-top: 15px;
+        font-size: 16px;
+        font-weight: bold;
+} 
+
+.navbox-2 {
+    border-left: 2px solid #212e80;
+    border-right: 2px solid #212e80;
+    background-color: white;
+    width: 20%;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}       
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    background-color: orange;
+}
+
+.main-grid-1 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #e6e6ff;
+
+}
+
+.main-grid-2 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #e6e6ff;
+
+}
+
+.photo-grid-left-1 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: #e6e6ff;
+}
+
+.photo-grid-left-2 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: #e6e6ff;
+}
+
+.photo-grid-right-1 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: #e6e6ff;
+}
+
+.photo-grid-right-2 {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: #e6e6ff;
+}
+
+.video-grid {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #e6e6ff;
+}
+
+.margin-small {
+    margin: 5% 5% 5% 5%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.footer-grid {
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #b3b3ff;
+    text-align: center;
+}
+
+.margin-footer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.image {
+    display: block;
+    border: 5px solid #212e80;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+
+}
+
+.image-gallery {
+    display: block;
+    border: 5px solid #212e80;
+    margin: 5%;
+    
+}
+
+img {
+    max-width: 87%;
+    height: auto;
+  }
+
+iframe {
+    display: block;
+    margin: 0 auto;
+ }
+
+@media (min-width: 1024px) {
+    .grid-site {
+        display: grid;
+        grid-template-columns: 250px 1fr 1fr;
+        grid-template-rows: 90px 0fr 1fr 0fr auto;
+        grid-column-gap: 2px;
+        grid-row-gap: 2px; 
+        background-color: #212e80;
+        }
+        
+    .header-grid {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        background-color: white;
+        text-align: center;    
+    }
+    
+    .navbar-grid {
+        grid-row-start: 2;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #b3b3ff;
+    }
+     
+    .main-grid-1 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        background-color: #e6e6ff;
+    
+    }
+    
+    .main-grid-2 {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        background-color: #e6e6ff;
+    
+    }
+
+    .photo-grid-left-1 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        background-color: #e6e6ff;
+    }
+    
+    .photo-grid-left-2 {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        background-color: #e6e6ff;
+    }
+    
+    .photo-grid-right-1 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        background-color: #e6e6ff;
+    }
+    
+    .photo-grid-right-2 {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        background-color: #e6e6ff;
+    }
+    
+    .video-grid {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        background-color: #e6e6ff;
+    }
+
+    .footer-grid {
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        background-color: #b3b3ff;
+        text-align: center;
+    }
+    .navbox-1 {
+        border-top: 2px solid #212e80;
+        border-bottom: 2px solid #212e80;
+        border-left: 0;
+        border-right: 0;
+        background-color: #e6e6ff;
+        width: 250px;
+        margin: 20px 20px 0px 0px;
+        padding: 10px 10px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+        .navbox-2 {
+            border-top: 2px solid #212e80;
+            border-bottom: 2px solid #212e80;
+            border-left: 0;
+            border-right: 0;
+            background-color: white;
+            width: 250px;
+            margin: 20px 20px 0px 0px;
+            padding: 10px 10px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+}        
+}

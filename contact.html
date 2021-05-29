@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title> Website over BMW Z </title>
+</head>
+
+<body class="grid-site">
+    <header class="header-grid">
+        <h1>BMW Z Site</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/BMW_logo_%28gray%29.svg/1024px-BMW_logo_%28gray%29.svg.png"
+            alt="BMW logo" class="bmw-logo-left">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/BMW_logo_%28gray%29.svg/1024px-BMW_logo_%28gray%29.svg.png"
+            alt="BMW logo" class="bmw-logo-right">
+    </header>
+    <nav class="navbar-grid">
+        <a href="index.html" class="navbox-1">Home</a>
+        <a href="modellen.html" class="navbox-1">Z-Modellen</a>
+        <a href="media.html" class="navbox-1">Media</a>
+        <a href="contact.html" class="navbox-2">Contact</a>
+    </nav>
+    <section class="main-grid-1">
+        <div class="margin-small">
+            <h2>Over mij</h2>
+            <p>
+                Hoi, Ik ben Sietse, 36 jaar en de maker van deze website.<br>
+                Dit jaar ben ik van start gegaan met de studie Front-end Developer en deze website is het resultaat van
+                mijn eerste
+                eindopdracht. </p>
+            <p>In mijn vrije tijd mag ik graag tijd besteden aan:</p>
+            <ol>
+                <li>Auto's</li>
+                <li>Reizen</li>
+                <li>Internetten en gamen</li>
+                <li>Muziek luisteren en films kijken</li>
+            </ol>
+            <p>
+                <img src="ik.jpg" alt="Een foto van mij" height="250">
+            </p>
+        </div>
+    </section>
+    <section class="main-grid-2">
+        <div class="margin-small">
+            <h2>Contact</h2>
+            <h4>Vragen? Neem gerust contact met me op door het onderstaande formulier in te vullen. Ik neem dan zo
+                spoedig
+                mogelijk contact met je op.<br>
+                Feedback voor de site? Ook dat hoor ik graag!
+            </h4>
+            <form name="contact" method="POST" data-netlify="true">
+                <p>
+                    <label> Naam: </label><br>
+                    <input type="text" name="name" />
+                </p>
+                <p>
+                    <label> E-mail adres: </label><br>
+                    <input type="email" name="email" />
+                </p>
+                <p>
+                    <textarea name="message" rows="10" cols="40">Typ je bericht hier</textarea><br>
+                </p>
+                <p>
+                    <input type="submit" value="Verzenden" />
+                    <input type="reset" value="Velden leegmaken" />
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer-grid">
+        <div class="margin-footer">
+            © Sietse Andringa 2021
+        </div>
+    </footer>
+</body>
+
+</html>
